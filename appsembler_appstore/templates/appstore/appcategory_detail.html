@@ -1,0 +1,19 @@
+{% extends "appstore/base_appstore.html" %}
+{% load thumbnail %}
+
+{% block appstore_content %}
+    <h3>Category: {{ appcategory.name }}</h3>
+    <div class="applications">
+        {% for app in appcategory.applications.all %}
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="{% thumbnail app.logo 80x80 %}">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">{{ app.name }}</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi incidunt modi praesentium sunt temporibus vero?</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
