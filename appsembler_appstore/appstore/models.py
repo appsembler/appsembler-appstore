@@ -1,4 +1,5 @@
 from django.db import models
+from categories.models import CategoryBase
 
 
 class Application(models.Model):
@@ -14,3 +15,10 @@ class Application(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class AppCategory(CategoryBase):
+    description = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "application categories"
