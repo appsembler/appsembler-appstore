@@ -133,6 +133,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'categories.editor',
+    'easy_thumbnails',
     'south',
 
     'appstore',
