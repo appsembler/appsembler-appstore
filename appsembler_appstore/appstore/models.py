@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.db import models
 from categories.models import CategoryBase
 
@@ -17,12 +18,18 @@ class Application(models.Model):
     def __unicode__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse("appstore_application_detail", kwargs={'pk': self.id})
+
 
 class AppCategory(CategoryBase):
     description = models.TextField()
 
-    class Meta:
+    class Meta(CategoryBase.Meta):
         verbose_name_plural = "application categories"
 
     def __unicode__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse("appstore_appcategory_detail", kwargs={'slug': self.slug})

@@ -1,13 +1,11 @@
 {% extends "base.html" %}
+{% load show_appcategory_menu %}
 
 {% block content %}
 <div class="row">
     <div class="span3">
         <h2>Categories</h2>
-        <ul>
-            <li><a href="/appstore/cms/">CMS</a></li>
-            <li><a href="/appstore/government/">Government</a></li>
-        </ul>
+        {% show_appcategory_menu %}
     </div>
     <div class="span9">
         <h2>Welcome to the App Store!</h2>
