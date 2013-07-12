@@ -15,6 +15,9 @@ class Application(models.Model):
     source_code_url = models.URLField(blank=True)
     demo_site_url = models.URLField(blank=True)
 
+    class Meta:
+        ordering = ('name', 'category')
+
     def __unicode__(self):
         return self.name
 

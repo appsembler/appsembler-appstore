@@ -7,13 +7,15 @@
         {% for app in appcategory.applications.all %}
         <div class="media">
             <a class="pull-left" href="#">
-                <img class="media-object" src="{% thumbnail app.logo 80x80 %}">
+                <img class="media-object" src="{% thumbnail app.logo 80x80 crop="scale"%}">
             </a>
             <div class="media-body">
-                <h4 class="media-heading">{{ app.name }}</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi incidunt modi praesentium sunt temporibus vero?</p>
+                <h4 class="media-heading"><a href="{{ app.get_absolute_url }}">{{ app.name }}</a></h4>
+                <p>{{ app.description }}</p>
             </div>
         </div>
+        {% empty %}
+            <p>There are no apps in this category!</p>
         {% endfor %}
     </div>
 {% endblock %}
