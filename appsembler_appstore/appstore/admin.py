@@ -7,5 +7,10 @@ class AppCategoryAdmin(CategoryBaseAdmin):
     pass
 
 
-admin.site.register(Application)
+class ApplicationAdmin(admin.ModelAdmin):
+    list_display = ('name', 'category', 'license_type', 'website')
+    list_filter = ('category', 'license_type')
+
+
+admin.site.register(Application, ApplicationAdmin)
 admin.site.register(AppCategory, AppCategoryAdmin)
