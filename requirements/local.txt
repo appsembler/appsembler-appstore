@@ -1,3 +1,8 @@
 -r base.txt
 
+django-debug-toolbar==0.9.4
 ipdb==0.7
+py==1.4.15
+pytest==2.3.5
+pytest-django==2.3.0
+selenium==2.33.0
