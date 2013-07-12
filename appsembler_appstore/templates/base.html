@@ -12,8 +12,9 @@
             <div class="navbar-inner">
                 <a class="brand" href="{% url "home" %}">Appsembler App Store</a>
                 <ul class="nav">
-                    <li class="active"><a href="{% url "home" %}">Home</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li class="{% block nav-home-active %}{% endblock %}"><a href="{% url "home" %}">Home</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="{% block nav-appstore-active %}{% endblock %}"><a href="{% url "appstore_index" %}">App Store</a></li>
                 </ul>
             </div>
         </div>
