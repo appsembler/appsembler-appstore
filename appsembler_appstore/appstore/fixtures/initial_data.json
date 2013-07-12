@@ -1,0 +1,109 @@
+[
+{
+  "pk": 1, 
+  "model": "appstore.application", 
+  "fields": {
+    "category": 5, 
+    "website": "http://wordpress.org/", 
+    "demo_site_url": "", 
+    "name": "Wordpress", 
+    "author": "Matt Mullenweg", 
+    "version": "3.5.2", 
+    "license_type": "GPLv2", 
+    "logo": "app_logos/wordpress-logo-notext-rgb.png", 
+    "source_code_url": "", 
+    "description": "WordPress started in 2003 with a single bit of code to enhance the typography of everyday writing and with fewer users than you can count on your fingers and toes. Since then it has grown to be the largest self-hosted blogging tool in the world, used on millions of sites and seen by tens of millions of people every day."
+  }
+},
+{
+  "pk": 2, 
+  "model": "appstore.application", 
+  "fields": {
+    "category": 5, 
+    "website": "https://drupal.org/", 
+    "demo_site_url": "", 
+    "name": "Drupal", 
+    "author": "Dries Buytaert and Hans Snijder ", 
+    "version": "7.22", 
+    "license_type": "GPLv2", 
+    "logo": "app_logos/druplicon.small_.png", 
+    "source_code_url": "", 
+    "description": "Drupal is an open source content management platform powering millions of websites and applications. It\u2019s built, used, and supported by an active and diverse community of people around the world."
+  }
+},
+{
+  "pk": 1, 
+  "model": "appstore.appcategory", 
+  "fields": {
+    "rght": 2, 
+    "name": "Education", 
+    "parent": null, 
+    "level": 0, 
+    "lft": 1, 
+    "tree_id": 2, 
+    "active": true, 
+    "slug": "education", 
+    "description": "Education"
+  }
+},
+{
+  "pk": 2, 
+  "model": "appstore.appcategory", 
+  "fields": {
+    "rght": 2, 
+    "name": "Nonprofit", 
+    "parent": null, 
+    "level": 0, 
+    "lft": 1, 
+    "tree_id": 5, 
+    "active": true, 
+    "slug": "nonprofit", 
+    "description": "Nonprofit"
+  }
+},
+{
+  "pk": 3, 
+  "model": "appstore.appcategory", 
+  "fields": {
+    "rght": 2, 
+    "name": "Health", 
+    "parent": null, 
+    "level": 0, 
+    "lft": 1, 
+    "tree_id": 4, 
+    "active": true, 
+    "slug": "health", 
+    "description": "Health"
+  }
+},
+{
+  "pk": 4, 
+  "model": "appstore.appcategory", 
+  "fields": {
+    "rght": 2, 
+    "name": "Government", 
+    "parent": null, 
+    "level": 0, 
+    "lft": 1, 
+    "tree_id": 3, 
+    "active": true, 
+    "slug": "government", 
+    "description": "Government"
+  }
+},
+{
+  "pk": 5, 
+  "model": "appstore.appcategory", 
+  "fields": {
+    "rght": 2, 
+    "name": "CMS", 
+    "parent": null, 
+    "level": 0, 
+    "lft": 1, 
+    "tree_id": 1, 
+    "active": true, 
+    "slug": "cms", 
+    "description": "CMS"
+  }
+}
+]
