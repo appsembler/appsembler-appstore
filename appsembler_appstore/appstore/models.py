@@ -23,3 +23,6 @@ class AppCategory(CategoryBase):
 
     class Meta:
         verbose_name_plural = "application categories"
+
+    def __unicode__(self):
+        return self.name
