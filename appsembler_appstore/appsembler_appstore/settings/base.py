@@ -1,5 +1,6 @@
-from unipath import Path
+import os
 from django.core.exceptions import ImproperlyConfigured
+from unipath import Path
 
 
 def get_env_variable(var_name):
@@ -129,10 +130,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admin',
+
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging
